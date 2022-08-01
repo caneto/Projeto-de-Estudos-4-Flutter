@@ -9,7 +9,17 @@ var request = Uri.parse('https://api.hgbrasil.com/finance?format=json&key=616ff2
 void main() async {
 
   runApp(MaterialApp(
-    home: Home(),
+    theme: ThemeData(
+        hintColor: Colors.amber,
+        primaryColor: Colors.white,
+        inputDecorationTheme: InputDecorationTheme(
+          enabledBorder:
+          OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
+          focusedBorder:
+          OutlineInputBorder(borderSide: BorderSide(color: Colors.amber)),
+          hintStyle: TextStyle(color: Colors.amber),
+        )),
+  home: Home(),
   ));
 }
 
@@ -19,6 +29,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  late double dolar;
+  late double euro;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +67,16 @@ class _HomeState extends State<Home> {
                     ),
                   );
                 } else {
-                  return Container(color: Colors.green,);
+                  dolar = snapshot.data!["results"]["currencies"]["USD"]["buy"];
+                  euro = snapshot.data!["results"]["currencies"]["EUR"]["buy"];
+                  return SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: <Widget>[
+                        Icon(Icons.monetization_on,size: 150.0,color: Colors.amber)
+                      ],
+                    ),
+                  );
                 }
             }
           },
