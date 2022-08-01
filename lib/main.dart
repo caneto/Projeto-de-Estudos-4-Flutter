@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
-var request = Uri.parse('https://api.hgbrasil.com/finance?format=json&key=616ff233');
+var request = Uri.parse('https://api.hgbrasil.com/finance?format=json&key=xxxxxxxx'); /// xxxxxx = sua key do site
 
 void main() async {
 
