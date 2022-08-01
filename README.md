@@ -1,16 +1,11 @@
-# conversordemoedas
+# Projeto 4 para Estudo do Flutter
 
-Conversor de Moedas
+Funcionalidade de Aprender o Basico do Flutter/Dart
 
-## Getting Started
+## Aplicativo Conversor de Moeda
 
-This project is a starting point for a Flutter application.
+### Este projeto foi usado com o Curso do Professor (Daniel Ciolfi)
 
-A few resources to get you started if this is your first Flutter project:
+Se desejar ver este curso procure no link abaixo.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Curso Udemy: ](https://www.udemy.com/course/curso-completo-flutter-app-android-ios/)
